@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jur-eU-5xQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Radios-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RadMag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Radio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMJ-qg-bGq">
+                                <rect key="frame" x="16" y="82" width="287" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHr-xU-1dk">
+                                <rect key="frame" x="315" y="82" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="buttonSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="irf-d5-zse"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Pk-A1-dvd">
+                                <rect key="frame" x="16" y="146" width="343" height="413"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RadioCell" id="tCu-uS-qes" customClass="RadiosTableViewCell" customModule="RadMag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tCu-uS-qes" id="ry8-Hk-GZR">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KE0-da-fCL">
+                                                    <rect key="frame" x="10" y="15" width="70" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="KE0-da-fCL" secondAttribute="height" multiplier="7:5" id="UFa-0Q-uE6"/>
+                                                        <constraint firstAttribute="width" constant="70" id="jYx-AA-zcs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-Eg-aCz">
+                                                    <rect key="frame" x="102" y="43" width="66" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ud-HQ-62P">
+                                                    <rect key="frame" x="210" y="43" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oo7-63-QcJ">
+                                                    <rect key="frame" x="102" y="15" width="214" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Oo7-63-QcJ" firstAttribute="leading" secondItem="KE0-da-fCL" secondAttribute="trailing" constant="22" id="3PP-st-YN4"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Ud-HQ-62P" secondAttribute="trailing" constant="91" id="704-K0-OWv"/>
+                                                <constraint firstItem="wRk-Eg-aCz" firstAttribute="top" secondItem="Oo7-63-QcJ" secondAttribute="bottom" constant="7" id="966-dJ-156"/>
+                                                <constraint firstItem="Oo7-63-QcJ" firstAttribute="top" secondItem="ry8-Hk-GZR" secondAttribute="top" constant="15" id="AaG-Ea-BOq"/>
+                                                <constraint firstItem="wRk-Eg-aCz" firstAttribute="baseline" secondItem="4Ud-HQ-62P" secondAttribute="baseline" id="Gfa-jo-O0t"/>
+                                                <constraint firstItem="KE0-da-fCL" firstAttribute="leading" secondItem="ry8-Hk-GZR" secondAttribute="leading" constant="10" id="GmI-t6-qec"/>
+                                                <constraint firstItem="KE0-da-fCL" firstAttribute="centerY" secondItem="ry8-Hk-GZR" secondAttribute="centerY" id="H8v-3g-Gtw"/>
+                                                <constraint firstItem="wRk-Eg-aCz" firstAttribute="leading" secondItem="Oo7-63-QcJ" secondAttribute="leading" id="YIA-wG-F0H"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Oo7-63-QcJ" secondAttribute="trailing" constant="12" id="mF2-AS-4fj"/>
+                                                <constraint firstItem="4Ud-HQ-62P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wRk-Eg-aCz" secondAttribute="trailing" constant="8" symbolic="YES" id="pBS-mD-8pC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="radioCountry" destination="4Ud-HQ-62P" id="QqB-wr-WSU"/>
+                                            <outlet property="radioImage" destination="KE0-da-fCL" id="lTf-RF-i5v"/>
+                                            <outlet property="radioName" destination="Oo7-63-QcJ" id="Tsz-lm-D0t"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Pk-A1-dvd" firstAttribute="top" secondItem="IHr-xU-1dk" secondAttribute="bottom" constant="34" id="3oO-Hf-eef"/>
+                            <constraint firstItem="9Pk-A1-dvd" firstAttribute="leading" secondItem="RMJ-qg-bGq" secondAttribute="leading" id="4SE-qS-GmE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHr-xU-1dk" secondAttribute="trailing" constant="12" id="6xo-Yi-OOc"/>
+                            <constraint firstItem="RMJ-qg-bGq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BzL-ZG-GYE"/>
+                            <constraint firstItem="RMJ-qg-bGq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="IYC-BG-dod"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Pk-A1-dvd" secondAttribute="bottom" constant="108" id="aQY-eQ-Y12"/>
+                            <constraint firstItem="IHr-xU-1dk" firstAttribute="top" secondItem="RMJ-qg-bGq" secondAttribute="top" id="caS-EU-SQx"/>
+                            <constraint firstItem="IHr-xU-1dk" firstAttribute="leading" secondItem="RMJ-qg-bGq" secondAttribute="trailing" constant="12" id="ii6-JK-zkz"/>
+                            <constraint firstItem="9Pk-A1-dvd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xeH-Nc-lwH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Radios" id="B6A-w7-cV3"/>
+                    <connections>
+                        <outlet property="radioTextField" destination="RMJ-qg-bGq" id="oEj-p0-edR"/>
+                        <outlet property="tableView" destination="9Pk-A1-dvd" id="fpg-IB-NZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.4000000000001" y="149.77511244377811"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="alQ-3Q-YGF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jur-eU-5xQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5nd-Qi-PSy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pra-o5-9H6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXQ-Lc-28z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="149.77511244377811"/>
+        </scene>
+    </scenes>
+</document>

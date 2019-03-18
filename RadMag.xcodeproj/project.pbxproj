@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D960ECD1223C375200669727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960ECD0223C375200669727 /* AppDelegate.swift */; };
+		D960ECD3223C375200669727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960ECD2223C375200669727 /* ViewController.swift */; };
+		D960ECD6223C375200669727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D960ECD4223C375200669727 /* Main.storyboard */; };
+		D960ECD9223C375200669727 /* RadMag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D960ECD7223C375200669727 /* RadMag.xcdatamodeld */; };
+		D960ECDB223C375300669727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D960ECDA223C375300669727 /* Assets.xcassets */; };
+		D960ECDE223C375300669727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D960ECDC223C375300669727 /* LaunchScreen.storyboard */; };
+		D960ECE6223C3A0E00669727 /* RadiosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960ECE5223C3A0E00669727 /* RadiosTableViewCell.swift */; };
+		D9938936223CF322000705FF /* radiodescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9938935223CF322000705FF /* radiodescription.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D960ECCD223C375200669727 /* RadMag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadMag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D960ECD0223C375200669727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D960ECD2223C375200669727 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D960ECD5223C375200669727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D960ECD8223C375200669727 /* RadMag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RadMag.xcdatamodel; sourceTree = "<group>"; };
+		D960ECDA223C375300669727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D960ECDD223C375300669727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D960ECDF223C375300669727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D960ECE5223C3A0E00669727 /* RadiosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiosTableViewCell.swift; sourceTree = "<group>"; };
+		D9938935223CF322000705FF /* radiodescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radiodescription.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D960ECCA223C375200669727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D960ECC4223C375200669727 = {
+			isa = PBXGroup;
+			children = (
+				D960ECCF223C375200669727 /* RadMag */,
+				D960ECCE223C375200669727 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D960ECCE223C375200669727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D960ECCD223C375200669727 /* RadMag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D960ECCF223C375200669727 /* RadMag */ = {
+			isa = PBXGroup;
+			children = (
+				D960ECD0223C375200669727 /* AppDelegate.swift */,
+				D960ECD2223C375200669727 /* ViewController.swift */,
+				D9938935223CF322000705FF /* radiodescription.swift */,
+				D960ECD4223C375200669727 /* Main.storyboard */,
+				D960ECE5223C3A0E00669727 /* RadiosTableViewCell.swift */,
+				D960ECDA223C375300669727 /* Assets.xcassets */,
+				D960ECDC223C375300669727 /* LaunchScreen.storyboard */,
+				D960ECDF223C375300669727 /* Info.plist */,
+				D960ECD7223C375200669727 /* RadMag.xcdatamodeld */,
+			);
+			path = RadMag;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D960ECCC223C375200669727 /* RadMag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D960ECE2223C375300669727 /* Build configuration list for PBXNativeTarget "RadMag" */;
+			buildPhases = (
+				D960ECC9223C375200669727 /* Sources */,
+				D960ECCA223C375200669727 /* Frameworks */,
+				D960ECCB223C375200669727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadMag;
+			productName = RadMag;
+			productReference = D960ECCD223C375200669727 /* RadMag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D960ECC5223C375200669727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alejandro Martinez Montero";
+				TargetAttributes = {
+					D960ECCC223C375200669727 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D960ECC8223C375200669727 /* Build configuration list for PBXProject "RadMag" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D960ECC4223C375200669727;
+			productRefGroup = D960ECCE223C375200669727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D960ECCC223C375200669727 /* RadMag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D960ECCB223C375200669727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D960ECDE223C375300669727 /* LaunchScreen.storyboard in Resources */,
+				D960ECDB223C375300669727 /* Assets.xcassets in Resources */,
+				D960ECD6223C375200669727 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D960ECC9223C375200669727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D960ECD3223C375200669727 /* ViewController.swift in Sources */,
+				D9938936223CF322000705FF /* radiodescription.swift in Sources */,
+				D960ECE6223C3A0E00669727 /* RadiosTableViewCell.swift in Sources */,
+				D960ECD9223C375200669727 /* RadMag.xcdatamodeld in Sources */,
+				D960ECD1223C375200669727 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D960ECD4223C375200669727 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D960ECD5223C375200669727 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D960ECDC223C375300669727 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D960ECDD223C375300669727 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D960ECE0223C375300669727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D960ECE1223C375300669727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D960ECE3223C375300669727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NS324YBDQX;
+				INFOPLIST_FILE = RadMag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alejandro.aeglos.RadMag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D960ECE4223C375300669727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NS324YBDQX;
+				INFOPLIST_FILE = RadMag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alejandro.aeglos.RadMag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D960ECC8223C375200669727 /* Build configuration list for PBXProject "RadMag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D960ECE0223C375300669727 /* Debug */,
+				D960ECE1223C375300669727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D960ECE2223C375300669727 /* Build configuration list for PBXNativeTarget "RadMag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D960ECE3223C375300669727 /* Debug */,
+				D960ECE4223C375300669727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D960ECD7223C375200669727 /* RadMag.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D960ECD8223C375200669727 /* RadMag.xcdatamodel */,
+			);
+			currentVersion = D960ECD8223C375200669727 /* RadMag.xcdatamodel */;
+			path = RadMag.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D960ECC5223C375200669727 /* Project object */;
+}
