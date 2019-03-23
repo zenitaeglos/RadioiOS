@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
     
     var radioList: [RadioDescription] = []
+    var radioToSendToViewController: RadioDescription?
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var radioTextField: UITextField!
@@ -28,10 +29,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.dataSource = self
         tableView.delegate = self
-    }
-    
-    func reloadData()  {
-        tableView.reloadData()
     }
 
     
@@ -53,14 +50,13 @@ class ViewController: UIViewController {
                 // Json to Array
                 let name = try JSONDecoder().decode([RadioJson].self, from: data!)
                 for radio in name {
-                    //let data = try Data(contentsOf: URL(radio.favicon))
-                    print(radio)
                     let radioDescription = RadioDescription(name: radio.name, url: radio.url, favicon: radio.favicon, homepage: radio.homepage, country: radio.country)
                     self.radioList.append(radioDescription)
                 }
-                self.reloadData()
+                
                 DispatchQueue.main.async {
                     print("main.async")
+                    self.tableView.reloadData()
                 }
             } catch {
                 print(error)
@@ -69,6 +65,21 @@ class ViewController: UIViewController {
         
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var selectedIndex = tableView.indexPathForSelectedRow
+        
+        if let index = selectedIndex?.row {
+            radioToSendToViewController = radioList[index]
+            
+        }
+        else {
+            return
+        }
+        let nextViewController = segue.destination as? RadioPlayViewController
+        nextViewController?.dataToDisplay = radioToSendToViewController
+    }
+ 
     
 }
 
@@ -96,5 +107,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.radioCountry.text = radio.country
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }

@@ -15,6 +15,7 @@
 		D960ECDE223C375300669727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D960ECDC223C375300669727 /* LaunchScreen.storyboard */; };
 		D960ECE6223C3A0E00669727 /* RadiosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D960ECE5223C3A0E00669727 /* RadiosTableViewCell.swift */; };
 		D9938936223CF322000705FF /* radiodescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9938935223CF322000705FF /* radiodescription.swift */; };
+		D9E84B7F22464C3D0055F9DD /* RadioPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E84B7E22464C3D0055F9DD /* RadioPlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D960ECDF223C375300669727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D960ECE5223C3A0E00669727 /* RadiosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiosTableViewCell.swift; sourceTree = "<group>"; };
 		D9938935223CF322000705FF /* radiodescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radiodescription.swift; sourceTree = "<group>"; };
+		D9E84B7E22464C3D0055F9DD /* RadioPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D960ECD2223C375200669727 /* ViewController.swift */,
 				D9938935223CF322000705FF /* radiodescription.swift */,
 				D960ECD4223C375200669727 /* Main.storyboard */,
+				D9E84B7E22464C3D0055F9DD /* RadioPlayViewController.swift */,
 				D960ECE5223C3A0E00669727 /* RadiosTableViewCell.swift */,
 				D960ECDA223C375300669727 /* Assets.xcassets */,
 				D960ECDC223C375300669727 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				D9938936223CF322000705FF /* radiodescription.swift in Sources */,
 				D960ECE6223C3A0E00669727 /* RadiosTableViewCell.swift in Sources */,
 				D960ECD9223C375200669727 /* RadMag.xcdatamodeld in Sources */,
+				D9E84B7F22464C3D0055F9DD /* RadioPlayViewController.swift in Sources */,
 				D960ECD1223C375200669727 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
