@@ -7,19 +7,20 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RadioPlayViewController: UIViewController {
     
     var dataToDisplay: RadioDescription?
 
+    @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var radioName: UILabel!
     @IBOutlet weak var radioImage: UIImageView!
+    var radioPlayer: AVPlayer?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print(dataToDisplay?.url ?? "nil asdasdasdasd")
-        print("data to display")
         radioName.text = dataToDisplay?.name
         let url = URL(string: (dataToDisplay?.favicon)!)
         if let myUrl = url {
@@ -28,17 +29,24 @@ class RadioPlayViewController: UIViewController {
                 radioImage.image = UIImage(data: imageData)
             }
         }
+        let radioUrl = URL(string: (dataToDisplay?.url)!)
+        if let radioToPlayUrl = radioUrl {
+            let playerItem = AVPlayerItem.init(url: radioToPlayUrl)
+            radioPlayer = AVPlayer.init(playerItem: playerItem)
+            radioPlayer?.play()
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func playStopButtonClicked(_ sender: UIButton) {
+        if playPauseButton.titleLabel?.text == "Pause" {
+            playPauseButton.setTitle("Play", for: UIControl.State.normal)
+            radioPlayer?.pause()
+            playPauseButton.titleLabel?.text = "Play"
+        }
+        else {
+            radioPlayer?.play()
+            playPauseButton.setTitle("Pause", for: UIControl.State.normal)
+        }
     }
-    */
-
 }

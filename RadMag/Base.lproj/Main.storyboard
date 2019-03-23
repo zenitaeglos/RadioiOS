@@ -129,14 +129,14 @@
                                     <constraint firstAttribute="width" secondItem="3zE-dB-WcK" secondAttribute="height" multiplier="343:307" id="vi1-ju-6J5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEq-80-1HZ">
-                                <rect key="frame" x="16" y="449" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEq-80-1HZ">
+                                <rect key="frame" x="16" y="449" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHF-0e-Zko">
-                                <rect key="frame" x="16" y="482" width="75" height="30"/>
+                                <rect key="frame" x="16" y="481.5" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="yeT-7j-vaa"/>
                                 </constraints>
@@ -148,7 +148,10 @@
                                     <constraint firstAttribute="width" constant="92" id="YcY-Fn-UTa"/>
                                     <constraint firstAttribute="height" constant="58" id="ZbM-1r-AKG"/>
                                 </constraints>
-                                <state key="normal" title="Stop"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="playStopButtonClicked:" destination="wjW-aE-jJe" eventType="touchUpInside" id="3vh-Bm-6uy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -167,6 +170,7 @@
                         <viewLayoutGuide key="safeArea" id="bfN-av-DzZ"/>
                     </view>
                     <connections>
+                        <outlet property="playPauseButton" destination="iZC-UD-46N" id="r9k-1Y-nFr"/>
                         <outlet property="radioImage" destination="3zE-dB-WcK" id="VfB-Yc-UHN"/>
                         <outlet property="radioName" destination="OEq-80-1HZ" id="aOX-Ll-BbK"/>
                     </connections>
